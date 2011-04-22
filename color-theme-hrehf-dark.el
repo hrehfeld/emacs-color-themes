@@ -89,9 +89,9 @@
      ;; User interface
      (fringe ((t (:background "#141414" :foreground "#999"))))
      (border ((t (:background "#0f0" :foreground "#f00"))))
-     (mode-line ((t (:background "#484547" :foreground "#aaa"))))
-     (mode-line-buffer-id ((t (:background "#484547" :foreground "#ccc"))))
-     (mode-line-inactive ((t (:background "#484547" :foreground "#111"))))
+     (mode-line ((t (:background "#556" :foreground "#aaa"))))
+     (mode-line-buffer-id ((t (:background "#556" :foreground "#eee"))))
+     (mode-line-inactive ((t (:background "#556" :foreground "#111"))))
      (minibuffer-prompt ((t (:foreground "#bbb"))))
      (region ((t (:background "#484848"))))
      (secondary-selection ((t (:background "#484951" :foreground "#F4F4FF"))))
@@ -101,7 +101,7 @@
      (show-paren-match-face ((t (:background "#335566" :foreground nil))))
      (show-paren-mismatch-face ((t (:foreground "#f4f4ff" :background "#c73c3f"))))
      ;; Line highlighting
-     (highlight ((t (:background "#555" :foreground nil))))
+     (highlight ((t (:underline "#fff" :background "#444" :foreground nil))))
      (highlight-current-line-face ((t (:background "#f00" :foreground nil))))
      
      (linum ((t (:background "#141414" :foreground "#555"))))
@@ -130,6 +130,9 @@
      ;;misc
      (which-func ((t (:foreground "#ffdd33"))))
 
+     ;;anything
+     (anything-file-name ((t (:foreground "#99f"))))
+     
 
      ;; ;; ediff
      ;; ;; (ediff-current-diff-A ((t (:background ediff-even :foreground nil))))
@@ -149,8 +152,5 @@
      ;; (ediff-odd-diff-B ((t (:background ,ediff-odd :foreground nil))))
      ;; (ediff-odd-diff-C ((t (:background ,ediff-odd :foreground nil))))
      )))
-
-(color-theme-hrehf-dark)
-
 
 (provide 'color-theme-hrehf-dark)
