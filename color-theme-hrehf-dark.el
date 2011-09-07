@@ -102,7 +102,7 @@
      (show-paren-mismatch-face ((t (:foreground "#f4f4ff" :background "#c73c3f"))))
      ;; Line highlighting
      (highlight ((t (:underline nil :background "#444" :foreground nil))))
-     (highlight-current-line-face ((t (:background "#f00" :foreground nil))))
+     (hl-line ((t (:background "#f00" :foreground nil))))
      
      (linum ((t (:background "#141414" :foreground "#555"))))
 

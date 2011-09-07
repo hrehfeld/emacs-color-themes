@@ -61,27 +61,27 @@
 	 (font-lock-comment-delimiter-face ((t (:font "Georgia" :slant normal))))
      (font-lock-doc-face ((t (:font "Georgia" :slant italic :weight bold :height 90))))
      (font-lock-doc-string-face ((t (:inherit font-lock-doc-face))))
-     (font-lock-string-face ((t (:slant italic :font "Georgia" :height 90))))
-     (font-lock-keyword-face ((t (:weight bold :height 70))))
-     (font-lock-builtin-face ((t (:weight bold))))
+     (font-lock-string-face ((t (:font "Georgia" :height 90))))
+     (font-lock-keyword-face ((t (:weight bold :height 75))))
+     (font-lock-builtin-face ((t (:inherit font-lock-keyword-face))))
      (font-lock-function-name-face ((t (:height 90 :underline nil))))
      (font-lock-variable-name-face ((t (:box nil))))
      (font-lock-preprocessor-face ((t (:foreground "#555"))))
      (font-lock-constant-face ((t (:slant italic :weight light))))
      (font-lock-type-face ((t (:weight normal :slant italic))))
-     (font-lock-warning-face ((t (:foreground "#a00"))))
-	 ;(font-lock-reference-face ((t (:foreground "#202120"))))
-     ;(font-lock-negation-char-face ((t (:box (:line-width 2 :color "#408")))))
-     ;(font-lock-regexp-grouping-backslash ((t (:background "#408"))))
-     ;(font-lock-regexp-grouping-construct ((t (:background "#408"))))
+     (font-lock-warning-face ((t (:overline "#e00"))))
+	 (font-lock-reference-face ((t (:foreground "#0f0"))))
+     (font-lock-negation-char-face ((t (:box nil :weight bold))))
+	 (font-lock-regexp-grouping-backslash ((t (:background "#eef"))))
+     (font-lock-regexp-grouping-construct ((t (:background "#efe"))))
 
      (trailing-whitespace ((t (:strike-through "#f99" ))))
      (link ((t (:foreground "#008" :underline t))))
 
      ;; Search
-     (isearch ((t (:inverse-video t))))
-     (isearch-lazy-highlight-face ((t (:inverse-video t :slant italic))))
-     (isearch-fail ((t (:inverse-video t :background "#800"))))
+     (isearch ((t (:inverse-video nil))))
+     (isearch-lazy-highlight-face ((t (:inverse-video t :slant normal))))
+     (isearch-fail ((t (:background "#800"))))
      (query-replace ((t (:inverse-video t))))
 
      ;; User interface
@@ -98,9 +98,9 @@
      ;; Parenthesis matching
      (show-paren-match-face ((t (:foreground nil :background "#bbb"))))
      (show-paren-mismatch-face ((t (:foreground "#eef" :background "#400"))))
+     (highlight ((t (:background "#ff9"))))
      ;; Line highlighting
-     (highlight ((t (:underline nil :background nil :foreground nil))))
-     (highlight-current-line-face ((t (:inverse-video t :foreground nil :background nil))))
+     (hl-line ((t (:background "#ffd"))))
      
      (linum ((t (:foreground "#aaa" :family "sans"))))
 
