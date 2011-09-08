@@ -57,10 +57,10 @@
 
      ;; Standard font lock faces
      (default ((t (nil))))
-     (font-lock-comment-face ((t (:foreground "#eb5"))))
-     (font-lock-comment-delimiter-face ((t (:foreground "#b70"))))
-     (font-lock-doc-face ((t (:foreground "#b70"))))
-     (font-lock-doc-string-face ((t (:foreground "#d93"))))
+     (font-lock-comment-face ((t (:foreground "#cb6"))))
+     (font-lock-comment-delimiter-face ((t (:foreground "#874"))))
+     (font-lock-doc-face ((t (:foreground "#ff0"))))
+	 (font-lock-doc-string-face ((t (:foreground "#ca5"))))
      (font-lock-string-face ((t (:foreground "#8e5"))))
      (font-lock-keyword-face ((t (:foreground "#f8b"))))
      (font-lock-builtin-face ((t (:foreground "#ed4"))))
@@ -73,36 +73,38 @@
      (font-lock-constant-face ((t (:foreground "#bfc"))))
      (font-lock-type-face ((t (:foreground "#eea"))))
      (font-lock-warning-face ((t (:foreground "#f44"))))
-     (font-lock-reference-face ((t (:foreground "#202120"))))
-     (font-lock-negation-char-face ((t (:box (:line-width 2 :color "#408")))))
-     (font-lock-regexp-grouping-backslash ((t (:background "#408"))))
-     (font-lock-regexp-grouping-construct ((t (:background "#408"))))
+     (font-lock-reference-face ((t (:foreground "#f0f"))))
+     (font-lock-negation-char-face ((t (:foreground "#949" :overline nil))))
 
-     (trailing-whitespace ((t (:underline "#f99" ))))
+     (font-lock-regexp-grouping-backslash ((t (:foreground "#9a8"))))
+     (font-lock-regexp-grouping-construct ((t (:weight bold :foreground "#af7"))))
+
+     (trailing-whitespace ((t (:underline "#733" ))))
      (link ((t (:foreground "#44e" :underline t))))
 
      ;; Search
-     (isearch ((t (:foreground "#000" :background "#f5f5f5"))))
+     (isearch ((t (:foreground "#000" :background "#8ef"))))
      (isearch-lazy-highlight-face ((t (:foreground "#f4f4ff" :background "#5f627f"))))
-     (isearch-fail ((t (:foreground "#000" :background "#f43841"))))
+     (isearch-fail ((t (:background nil :foreground "#f43841"))))
 
      ;; User interface
      (fringe ((t (:background "#141414" :foreground "#999"))))
      (border ((t (:background "#0f0" :foreground "#f00"))))
      (mode-line ((t (:background "#556" :foreground "#aaa"))))
-     (mode-line-buffer-id ((t (:background "#556" :foreground "#eee"))))
-     (mode-line-inactive ((t (:background "#556" :foreground "#111"))))
+     (mode-line-buffer-id ((t (:foreground "#eee" :slant italic))))
+     (mode-line-inactive ((t (:background "#334" :foreground "#667"))))
      (minibuffer-prompt ((t (:foreground "#bbb"))))
      (region ((t (:background "#484848"))))
      (secondary-selection ((t (:background "#484951" :foreground "#F4F4FF"))))
      (tooltip ((t (:background "#52494e" :foreground "#fff"))))
+     (header-line ((t (:background "#556" :foreground "#fff" :weight normal :height 1.125))))
 
      ;; Parenthesis matching
      (show-paren-match-face ((t (:background "#335566" :foreground nil))))
      (show-paren-mismatch-face ((t (:foreground "#f4f4ff" :background "#c73c3f"))))
      ;; Line highlighting
-     (highlight ((t (:underline nil :background "#444" :foreground nil))))
-     (hl-line ((t (:background "#f00" :foreground nil))))
+     (highlight ((t (:inverse-video t :background nil))))
+     (hl-line ((t (:inverse-video nil :background "#333"))))
      
      (linum ((t (:background "#141414" :foreground "#555"))))
 
@@ -131,7 +133,8 @@
      (which-func ((t (:foreground "#ffdd33"))))
 
      ;;anything
-     (anything-file-name ((t (:foreground "#99f"))))
+     (anything-ff-file ((t (:foreground "#ddf" :background nil :underline nil))))
+     (anything-ff-directory ((t (:foreground "#dfd" :background nil :underline nil))))
      
 
      ;; ;; ediff
