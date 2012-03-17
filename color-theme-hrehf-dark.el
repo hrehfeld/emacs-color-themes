@@ -132,6 +132,10 @@
      ;;misc
      (which-func ((t (:foreground "#ffdd33"))))
 
+	 ;;org-mode
+     (org-special-keyword ((t (:foreground "#bbb"))))
+     (org-hide ((t (:foreground "#222224"))))
+
      ;;anything
      (anything-ff-file ((t (:foreground "#ddf" :background nil :underline nil))))
      (anything-ff-directory ((t (:foreground "#dfd" :background nil :underline nil))))
